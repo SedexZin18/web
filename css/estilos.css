@@ -1,0 +1,82 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+.topbar {
+  background: #111;
+  color: white;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo {
+  height: 50px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #007bff;
+}
+.carrusel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.intro {
+  padding: 2rem;
+}
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .intro h2 {
+        font-size: 2rem;
+      }
+
+      .intro p {
+        font-size: 1rem;
+      }
+
+      .productos {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem 0;
+      }
+
+      .productos-container {
+        padding: 0 1rem;
+      }
+
+      /* CORREGIDO: Altura de imagen más pequeña en móviles */
+      .card-image {
+        height: 180px;
+      }
+    }
